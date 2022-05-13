@@ -1,68 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#D0FFDC">
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".MainActivity"
+        android:layout_margin="@dimen/margem"
         android:orientation="vertical"
-        android:layout_margin="@dimen/margem">
+        tools:context=".MainActivity">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/nome"
-            android:textSize="16sp" />
+            android:textColor="#002800"
+            android:textSize="16sp"
+            android:textStyle="bold" />
 
         <EditText
             android:id="@+id/edtNome"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="text"/>
+            android:inputType="text"
+            android:textColor="#002800" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/email"
             android:inputType="textEmailAddress"
+            android:text="@string/email"
+            android:textColor="#002800"
             android:textSize="16sp"
+            android:textStyle="bold"
             tools:ignore="TextViewEdits" />
 
         <EditText
             android:id="@+id/edtEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="textEmailAddress"/>
+            android:inputType="textEmailAddress" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/tel"
-            android:textSize="16sp"
             android:inputType="phone"
+            android:text="@string/tel"
+            android:textColor="#002800"
+            android:textSize="16sp"
+            android:textStyle="bold"
             tools:ignore="TextViewEdits" />
 
         <EditText
             android:id="@+id/edtTelefone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="phone"/>
+            android:inputType="phone" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/margem"
             android:layout_marginBottom="@dimen/margem">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/whats"
-                android:textSize="16sp" />
+                android:textColor="#002800"
+                android:textSize="16sp"
+                android:textStyle="bold" />
 
             <Switch
                 android:id="@+id/swtWhats"
@@ -81,27 +91,32 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/txtSexo"
-            android:layout_gravity="right"
-            android:text="@string/sexo"/>
+            <TextView
+                android:id="@+id/txtSexo"
+                android:layout_width="47dp"
+                android:layout_height="30dp"
+                android:layout_gravity="right"
+                android:text="@string/sexo"
+                android:textColor="#002800"
+                android:textSize="16sp"
+                android:textStyle="bold" />
 
 
             <RadioButton
-            android:id="@+id/rdbMasculino"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/masculino" />
+                android:id="@+id/rdbMasculino"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/masculino"
+                android:textColor="#002800" />
 
-        <RadioButton
-            android:id="@+id/rdbFeminino"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/feminino" />
+            <RadioButton
+                android:id="@+id/rdbFeminino"
+                android:layout_width="7dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/feminino"
+                android:textColor="#002800" />
 
         </RadioGroup>
 
@@ -109,71 +124,82 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/periodo"
-            android:textSize="16sp" />
+            android:textColor="#002800"
+            android:textSize="16sp"
+            android:textStyle="bold" />
 
-            <RadioGroup
-                android:id="@+id/rdgPeriodo"
-                android:layout_width="match_parent"
+        <RadioGroup
+            android:id="@+id/rdgPeriodo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rdbManha"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:layout_weight="1"
+                android:text="@string/manha"
+                android:textColor="#002800" />
 
-                <RadioButton
-                    android:id="@+id/rdbManha"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="@string/manha" />
+            <RadioButton
+                android:id="@+id/rdbTarde"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/tarde"
+                android:textColor="#002800" />
 
-                <RadioButton
-                    android:id="@+id/rdbTarde"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="@string/tarde" />
+            <RadioButton
+                android:id="@+id/rdbNoite"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/noite"
+                android:textColor="#002800" />
 
-                <RadioButton
-                    android:id="@+id/rdbNoite"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="@string/noite" />
-
-            </RadioGroup>
+        </RadioGroup>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/pref"
-            android:textSize="16sp" />
+            android:textColor="#002800"
+            android:textSize="16sp"
+            android:textStyle="bold" />
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-        <CheckBox
-            android:id="@+id/chkInternet"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/internet"/>
+            <CheckBox
+                android:id="@+id/chkInternet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/internet"
+                android:textColor="#002800" />
 
-        <CheckBox
-            android:id="@+id/chkTelefone"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/tel"/>
+            <CheckBox
+                android:id="@+id/chkTelefone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tel"
+                android:textColor="#002800" />
 
-        <CheckBox
-            android:id="@+id/chkTv"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/tv"/>
+            <CheckBox
+                android:id="@+id/chkTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tv"
+                android:textColor="#002800" />
 
-        <CheckBox
-            android:id="@+id/chkStreaming"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/streaming"/>
+            <CheckBox
+                android:id="@+id/chkStreaming"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/streaming"
+                android:textColor="#002800" />
         </LinearLayout>
 
         <Switch
@@ -182,27 +208,37 @@
             android:layout_height="wrap_content"
             android:layout_gravity="right"
             android:text="@string/notificacao"
+            android:textColor="#002800"
+            android:textSize="16sp"
+            android:textStyle="bold"
             tools:ignore="UseSwitchCompatOrMaterialXml" />
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:visibility="visible">
 
             <Button
                 android:id="@+id/btnCancelar"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margem"
                 android:layout_weight="1"
+                android:backgroundTint="@color/verdon"
                 android:text="@string/cancelar"
-                android:layout_margin="@dimen/margem"/>
+                android:visibility="visible" />
 
             <Button
                 android:id="@+id/btnOk"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margem"
                 android:layout_weight="1"
+                android:backgroundTint="@color/verdin"
                 android:text="@string/ok"
-                android:layout_margin="@dimen/margem"/>
+                android:visibility="visible"
+                app:rippleColor="#8A0000"
+                app:strokeColor="#FFFFFF" />
 
         </LinearLayout>
 

@@ -3,12 +3,12 @@
     <string name="nome">Nome</string>
     <string name="email">E-mail</string>
     <string name="tel">Telefone</string>
-    <string name="periodo">Periodo</string>
-    <string name="manha">Manha</string>
+    <string name="periodo">Período</string>
+    <string name="manha">Manhã</string>
     <string name="tarde">Tarde</string>
     <string name="noite">Noite</string>
     <string name="whats">Whatsapp</string>
-    <string name="pref">Preferencias</string>
+    <string name="pref">Preferências</string>
     <string name="internet">Internet</string>
     <string name="tv">TV </string>
     <string name="sexo">Sexo</string>
