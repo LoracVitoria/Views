@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Views</string>
+    <string name="nome">Nome</string>
+    <string name="email">E-mail</string>
+    <string name="tel">Telefone</string>
+    <string name="periodo">Periodo</string>
+    <string name="manha">Manha</string>
+    <string name="tarde">Tarde</string>
+    <string name="noite">Noite</string>
+    <string name="whats">Whatsapp</string>
+    <string name="pref">Preferencias</string>
+    <string name="internet">Internet</string>
+    <string name="tv">TV </string>
+    <string name="sexo">Sexo</string>
+    <string name="feminino">Feminino</string>
+    <string name="masculino">Masculino</string>
+    <string name="streaming">Streaming</string>
+    <string name="notificacao">Ativar notificações</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="ok">Ok</string>
+
+</resources>
