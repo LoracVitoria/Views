@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pais">England</string>
+    <string name="helloWorld">Hello, world!</string>
+    <string name="botao">Country</string>
+</resources>
