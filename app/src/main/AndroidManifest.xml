@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Views">
         <activity
-            android:name=".MainActivity"
+            android:name=".Creative"
             android:exported="true" >
         <intent-filter>
         <action android:name="android.intent.action.MAIN" />
@@ -19,7 +19,7 @@
     </intent-filter>
     </activity>
         <activity
-            android:name=".Creative"
+            android:name=".MainActivity"
             android:exported="false"/>
 
     </application>
